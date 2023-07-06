@@ -46,54 +46,38 @@ export const Timer = () => {
 	});
 
 	return (
-		<div className="flex flex-row justify-center gap-10">
-			<div className="flex flex-col gap-8">
-				<div className="bunda pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
-					<div className="back rounded-t-2xl [grid-area:1/1/2/2] w-56 h-20"></div>
-					<div className="bg-blue-desaturated text-center rounded-b-2xl [grid-area:1/1/3/2] w-56 h-40"></div>
-					<h2 className="text-red text-9xl [grid-area:1/1/3/2] text-center">
-						{countdownDays}
-					</h2>
+		<div className="flex flex-row justify-center gap-2">
+			<div className="flex flex-col gap-8 relative">
+				<div className="tick pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
+					<div className="back"></div>
+					<div className="background"></div>
+					<h2>{countdownDays}</h2>
 				</div>
-				<h3 className="uppercase text-blue-grayish text-center tracking-[0.3rem]">
-					Days
-				</h3>
+				<h3>Days</h3>
 			</div>
-			<div className="flex flex-col gap-8">
-				<div className="bunda pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
-					<div className="back rounded-t-2xl [grid-area:1/1/2/2] w-56 h-20"></div>
-					<div className="bg-blue-desaturated text-center rounded-b-2xl [grid-area:1/1/3/2] w-56 h-40"></div>
-					<h2 className="text-red text-9xl [grid-area:1/1/3/2] text-center">
-						{countdownHours}
-					</h2>
+			<div className="flex flex-col gap-8 relative">
+				<div className="tick pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
+					<div className="back"></div>
+					<div className="background"></div>
+					<h2>{countdownHours}</h2>
 				</div>
-				<h3 className="uppercase text-blue-grayish text-center tracking-[0.3rem]">
-					Hours
-				</h3>
+				<h3>Hours</h3>
 			</div>
-			<div className="flex flex-col gap-8">
-				<div className="bunda pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
-					<div className="back rounded-t-2xl [grid-area:1/1/2/2] w-56 h-20"></div>
-					<div className="bg-blue-desaturated text-center rounded-b-2xl [grid-area:1/1/3/2] w-56 h-40"></div>
-					<h2 className="text-red text-9xl [grid-area:1/1/3/2] text-center">
-						{countdownMinutes}
-					</h2>
+			<div className="flex flex-col gap-8 relative">
+				<div className="tick pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
+					<div className="back"></div>
+					<div className="background"></div>
+					<h2>{countdownMinutes}</h2>
 				</div>
-				<h3 className="uppercase text-blue-grayish text-center tracking-[0.3rem]">
-					Minutes
-				</h3>
+				<h3>Minutes</h3>
 			</div>
-			<div className="flex flex-col gap-8">
-				<div className="bunda pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
-					<div className="back rounded-t-2xl [grid-area:1/1/2/2] w-56 h-20"></div>
-					<div className="bg-blue-desaturated text-center rounded-b-2xl [grid-area:1/1/3/2] w-56 h-40"></div>
-					<h2 className="text-red text-9xl [grid-area:1/1/3/2] text-center">
-						{countdownSeconds}
-					</h2>
+			<div className="flex flex-col gap-8 relative">
+				<div className="tick pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
+					<div className="back"></div>
+					<div className="background"></div>
+					<h2>{countdownSeconds}</h2>
 				</div>
-				<h3 className="uppercase text-blue-grayish text-center tracking-[0.3rem]">
-					Seconds
-				</h3>
+				<h3>Seconds</h3>
 			</div>
 		</div>
 	);
