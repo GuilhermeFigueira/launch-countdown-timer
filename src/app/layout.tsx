@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./globals.scss";
 import { Red_Hat_Text } from "next/font/google";
 
 const red_hat_text = Red_Hat_Text({

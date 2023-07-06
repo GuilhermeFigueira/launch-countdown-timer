@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-bg {
+	background-image: url(/pattern-hills.svg), url(/bg-stars.svg);
+	background-repeat: no-repeat, repeat;
+	background-position: bottom, top;
+	background-size: contain, auto;
+	background-color: hsl(249, 18%, 14%);
+}
+
+.back {
+	backdrop-filter: brightness(0.8);
+}
+.bunda:before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 50px;
+	transform: translateY(270%) translateX(-50%);
+	grid-area: 1/1/2/2;
+	@apply bg-blue-black;
+}
+.bunda::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	right: 0px;
+	border-radius: 50px;
+	right: 0;
+	transform: translateY(270%) translateX(1450%);
+	grid-area: 1/1/2/2;
+	@apply bg-blue-black;
+}

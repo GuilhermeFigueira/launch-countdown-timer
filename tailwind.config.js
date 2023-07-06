@@ -7,13 +7,15 @@ module.exports = {
 	],
 	theme: {
 		extend: {
-			blue: {
-				grayish: "hsl(237, 18%, 59%)",
-				desaturated: "hsl(236, 21%, 26%)",
-				dark: "hsl(235, 16%, 14%)",
-				black: "hsl(234, 17%, 12%)",
+			colors: {
+				blue: {
+					grayish: "hsl(237, 18%, 59%)",
+					desaturated: "hsl(236, 21%, 26%)",
+					dark: "hsl(235, 16%, 14%)",
+					black: "hsl(234, 17%, 12%)",
+				},
+				red: "hsl(345, 95%, 68%)",
 			},
-			red: "hsl(345, 95%, 68%)",
 		},
 	},
 	plugins: [],
