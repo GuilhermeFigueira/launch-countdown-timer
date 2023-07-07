@@ -7,11 +7,10 @@ export const Timer = () => {
 	const [countdownHours, setCountDownHours] = useState<any>("");
 	const [countdownMinutes, setCountDownMinutes] = useState<any>("");
 	const [countdownSeconds, setCountDownSeconds] = useState<any>("");
-	let interval = useRef();
 
 	const startCountDown = () => {
 		const countdownDate = new Date("September 23, 2023 00:00:00").getTime();
-		interval = setInterval(() => {
+		setInterval(() => {
 			const now = new Date().getTime();
 			const distance = countdownDate - now;
 
@@ -26,7 +25,6 @@ export const Timer = () => {
 
 			if (distance < 0) {
 				// stop timer
-				clearInterval(interval.current);
 			} else {
 				//update timer
 				setCountDownDays(days);
@@ -34,15 +32,12 @@ export const Timer = () => {
 				setCountDownMinutes(minutes);
 				setCountDownSeconds(seconds);
 			}
-		});
+			// console.log(interval);
+		}, 1000);
 	};
 
 	useEffect(() => {
 		startCountDown();
-		return () => {
-			// eslint-disable-next-line react-hooks/exhaustive-deps
-			clearInterval(interval.current);
-		};
 	});
 
 	return (
