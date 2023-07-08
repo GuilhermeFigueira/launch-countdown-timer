@@ -41,9 +41,9 @@ export const Timer = () => {
 	});
 
 	return (
-		<div className="flex flex-row justify-center gap-2">
-			<div className="flex flex-col gap-8 relative">
-				<div className="tick pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
+		<div className="flex flex-row justify-center gap-2 lg:gap-10">
+			<div className="flex flex-col gap-8 relative ">
+				<div className="tick pb-2 rounded-md self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
 					<div className="back"></div>
 					<div className="background"></div>
 					<h2>{countdownDays}</h2>
@@ -51,7 +51,7 @@ export const Timer = () => {
 				<h3>Days</h3>
 			</div>
 			<div className="flex flex-col gap-8 relative">
-				<div className="tick pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
+				<div className="tick pb-2 rounded-md self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
 					<div className="back"></div>
 					<div className="background"></div>
 					<h2>{countdownHours}</h2>
@@ -59,7 +59,7 @@ export const Timer = () => {
 				<h3>Hours</h3>
 			</div>
 			<div className="flex flex-col gap-8 relative">
-				<div className="tick pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
+				<div className="tick pb-2 rounded-md self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
 					<div className="back"></div>
 					<div className="background"></div>
 					<h2>{countdownMinutes}</h2>
@@ -67,7 +67,7 @@ export const Timer = () => {
 				<h3>Minutes</h3>
 			</div>
 			<div className="flex flex-col gap-8 relative">
-				<div className="tick pb-3 rounded-2xl self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
+				<div className="tick pb-2 rounded-md self-stretch overflow-hidden bg-blue-black z-1 grid grid-cols-1 grid-rows-2 items-center ">
 					<div className="back"></div>
 					<div className="background"></div>
 					<h2>{countdownSeconds}</h2>

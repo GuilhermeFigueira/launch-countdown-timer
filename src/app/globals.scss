@@ -6,42 +6,43 @@
 	background-image: url(/pattern-hills.svg), url(/bg-stars.svg);
 	background-repeat: no-repeat, repeat;
 	background-position: bottom, top;
-	background-size: contain, auto;
+	background-size: 100vh, auto;
 	background-color: hsl(249, 18%, 14%);
+	@apply md:[background-size:contain,auto];
 }
 
 .back {
 	backdrop-filter: brightness(0.8);
-	@apply rounded-t-2xl [grid-area:1/1/2/2] w-20 h-12 lg:w-56 lg:h-20;
+	@apply rounded-t-md [grid-area:1/1/2/2] w-20 h-10 lg:w-48 lg:h-20;
 }
 .background {
-	@apply bg-blue-desaturated text-center rounded-b-2xl [grid-area:1/1/3/2] w-20 h-24 lg:w-56 lg:h-40;
+	@apply bg-blue-desaturated text-center rounded-b-md [grid-area:1/1/3/2] w-20 h-20 lg:w-48 lg:h-40;
 }
 h2 {
 	@apply text-red text-4xl [grid-area:1/1/3/2] text-center lg:text-9xl;
 }
 h3 {
-	@apply uppercase text-blue-grayish text-center tracking-[0.3rem] text-[0.6rem];
+	@apply uppercase text-blue-grayish text-center tracking-[0.3rem] text-[0.6rem] lg:text-sm;
 }
 .tick:before {
 	content: "";
-	width: 15px;
-	height: 15px;
+	width: 8px;
+	height: 8px;
 	border-radius: 50px;
 	left: 0;
 	position: absolute;
 	transform: translateY(0%) translateX(-50%);
 	grid-area: 1/1/2/2;
-	@apply bg-blue-black;
+	@apply bg-blue-dark lg:w-5 lg:h-5;
 }
 .tick::after {
 	content: "";
-	width: 15px;
-	height: 15px;
+	width: 8px;
+	height: 8px;
 	right: 0;
 	border-radius: 50px;
 	position: absolute;
 	transform: translateY(0%) translateX(50%);
 	grid-area: 1/1/2/2;
-	@apply bg-blue-black;
+	@apply bg-blue-dark lg:w-5 lg:h-5;
 }
