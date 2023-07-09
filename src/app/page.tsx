@@ -3,7 +3,25 @@ import { Timer } from "./Timer";
 export default function Home() {
 	return (
 		<main className="h-screen w-screen main-bg flex flex-col gap-16">
-			<h1 className="uppercase text-white text-center  text-xl tracking-[0.5rem] pt-36 ">
+			<div className="text-center pt-4 justify-self-end">
+				Challenge by{" "}
+				<a
+					href="https://www.frontendmentor.io?ref=challenge"
+					target="_blank"
+				>
+					Frontend Mentor
+				</a>
+				. Coded by{" "}
+				<a
+					href="https://github.com/guilhermefigueira"
+					target="_blank"
+					className="text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-sky-700 font-bold hover:text-lg hover:tracking-widest transition-all "
+				>
+					Guilherme Figueira
+				</a>
+				.
+			</div>
+			<h1 className="uppercase text-white text-center text-xl tracking-[0.5rem] pt-28 ">
 				We&apos;re launching soon
 			</h1>
 			<Timer />
