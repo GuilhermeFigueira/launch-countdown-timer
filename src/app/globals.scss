@@ -46,3 +46,6 @@ h3 {
 	grid-area: 1/1/2/2;
 	@apply bg-blue-dark lg:w-5 lg:h-5;
 }
+svg {
+	@apply hover:fill-red cursor-pointer transition-all duration-500;
+}
